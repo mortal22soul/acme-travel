@@ -1,0 +1,6 @@
+import Link from "next/link";
+import { IconCompass, IconHome } from "@tabler/icons-react";
+
+export default function NotFound() {
+  return <section className="page-shell flex justify-center"><section className="max-w-xl rounded-3xl border border-border bg-card p-10 text-center shadow-xl shadow-blue-950/10 backdrop-blur-xl"><p className="text-sm font-semibold uppercase tracking-[0.25em] text-accent-foreground">Error 404</p><h1 className="mt-3 text-5xl font-bold tracking-tight text-foreground">Lost, not forgotten.</h1><p className="mx-auto mt-4 max-w-md text-muted-foreground">The page you requested has moved, or it never existed. Let&apos;s get your next journey back on track.</p><div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row"><Link href="/" className="inline-flex items-center justify-center gap-2 rounded-full bg-blue-700 px-5 py-3 font-semibold text-white transition hover:bg-blue-800"><IconHome size={18} /> Go home</Link><Link href="/destinations" className="inline-flex items-center justify-center gap-2 rounded-full border border-cyan-200 bg-white px-5 py-3 font-semibold text-cyan-800 transition hover:bg-cyan-50"><IconCompass size={18} /> Explore trips</Link></div></section></section>;
+}
